@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+:root {
+    --color-primary: #1677ff;
+    --color-secondary: #13c2c2;
+
+    --color-success: #52c41a;
+    --color-warning: #faad14;
+    --color-danger: #f5222d;
+
+    --color-background: #f5f7fa;
+    --color-card: #ffffff;
+
+    --color-text: #1f2937;
+    --color-text-secondary: #6b7280;
+
+    --color-border: #d9e1ec;
+}
+
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* =========================
+   Card
+========================= */
+
+.ant-card {
+    border: 1px solid var(--color-border, #d9e1ec);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ant-card:hover {
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.09);
+}
+
+/* =========================
+   Panel
+========================= */
+
+.panel {
+    overflow: hidden;
+
+    background: var(--color-card);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.panel .ant-card-head {
+    background: var(--color-primary);
+
+    color: #fff;
+
+    border-bottom: none;
+
+    border-radius: 16px 16px 0 0;
+}
+
+.panel .ant-card-head-title {
+    color: #fff;
+
+    font-weight: 600;
+}
+
+.panel .ant-card-body {
+    background: var(--color-card);
+
+    color: var(--color-text);
+}

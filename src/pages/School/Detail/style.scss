@@ -1,0 +1,339 @@
+.school-detail {
+    min-height: 100vh;
+
+    padding: 28px 32px 50px;
+
+    background: var(--color-background);
+}
+
+/* =========================
+   Back
+========================= */
+
+.school-detail__back {
+    margin-bottom: 12px;
+
+    .ant-btn {
+        padding-left: 0;
+
+        color: var(--color-text-secondary);
+    }
+
+    .ant-btn:hover {
+        color: var(--color-primary);
+    }
+}
+
+/* =========================
+   Header
+========================= */
+
+.school-detail__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 28px;
+}
+
+.school-detail__title {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+.school-detail__icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: rgba(22, 119, 255, 0.1);
+
+    color: var(--color-primary);
+
+    font-size: 28px;
+}
+
+.school-detail__header h1 {
+    margin: 4px 0 10px;
+
+    color: var(--color-text);
+
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.school-detail__meta {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+.school-detail__location {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    max-width: 320px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 14px;
+
+    text-align: right;
+}
+
+/* =========================
+   KPI
+========================= */
+
+.school-detail__kpi {
+    margin-bottom: 20px;
+}
+
+.school-detail-stat {
+    height: 100%;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.school-detail-stat .ant-statistic-title {
+    color: var(--color-text-secondary);
+}
+
+.school-detail-stat .ant-statistic-content {
+    color: var(--color-text);
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+/* =========================
+   Content
+========================= */
+
+.school-detail__content {
+    margin-top: 20px;
+}
+
+/* =========================
+   Information
+========================= */
+
+.school-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-info__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.school-info__row:first-child {
+    padding-top: 0;
+}
+
+.school-info__row:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+.school-info__row span {
+    color: var(--color-text-secondary);
+
+    font-size: 14px;
+}
+
+.school-info__row strong {
+    color: var(--color-text);
+
+    font-size: 14px;
+
+    text-align: right;
+}
+
+/* =========================
+   Capacity
+========================= */
+
+.capacity {
+    text-align: center;
+}
+
+.capacity__value {
+    margin: 8px 0 12px;
+
+    color: var(--color-primary);
+
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.capacity__description {
+    margin-top: 8px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+.capacity__summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.capacity__summary > div {
+    padding: 14px;
+
+    background: var(--color-background);
+
+    border-radius: 12px;
+}
+
+.capacity__summary strong {
+    display: block;
+
+    color: var(--color-text);
+
+    font-size: 20px;
+}
+
+.capacity__summary span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+/* =========================
+   Facilities
+========================= */
+
+.facility-item {
+    padding: 20px;
+
+    text-align: center;
+
+    background: var(--color-background);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 12px;
+}
+
+.facility-item strong {
+    display: block;
+
+    color: var(--color-primary);
+
+    font-size: 28px;
+}
+
+.facility-item span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+/* =========================
+   Not found
+========================= */
+
+.school-not-found {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 767px) {
+
+    .school-detail {
+        padding: 20px 16px 40px;
+    }
+
+    .school-detail__header {
+        flex-direction: column;
+    }
+
+    .school-detail__title {
+        gap: 12px;
+    }
+
+    .school-detail__icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 22px;
+    }
+
+    .school-detail__header h1 {
+        font-size: 23px;
+    }
+
+    .school-detail__location {
+        max-width: none;
+
+        text-align: left;
+    }
+
+    .school-info__row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .school-info__row strong {
+        text-align: left;
+    }
+
+}

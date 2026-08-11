@@ -1,0 +1,178 @@
+.city-dashboard {
+    min-height: 100vh;
+
+    padding: 28px 32px 50px;
+
+    background: var(--color-background);
+}
+
+.city-dashboard__back {
+    margin-bottom: 12px;
+}
+
+.city-dashboard__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    margin-bottom: 28px;
+}
+
+.city-dashboard__header h1 {
+    margin: 4px 0 8px;
+
+    color: var(--color-text);
+
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.city-dashboard__header p {
+    margin: 0;
+
+    color: var(--color-text-secondary);
+
+    font-size: 15px;
+}
+
+.city-dashboard__kpi {
+    margin-bottom: 20px;
+}
+
+.city-stat-card {
+    height: 100%;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.city-stat-card .ant-card-body {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px;
+}
+
+.city-stat-card__icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(22, 119, 255, 0.08);
+
+    color: var(--color-primary);
+
+    font-size: 22px;
+}
+
+.city-stat-card .ant-statistic-title {
+    color: var(--color-text-secondary);
+}
+
+.city-stat-card .ant-statistic-content {
+    color: var(--color-text);
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+/* Quick links */
+
+.city-quick-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.city-quick-links button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 12px;
+
+    background: var(--color-card);
+
+    color: var(--color-primary);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.city-quick-links button:hover {
+    background: #f0f6ff;
+
+    border-color: var(--color-primary);
+
+    transform: translateX(3px);
+}
+
+.city-quick-links button > svg {
+    font-size: 22px;
+
+    flex-shrink: 0;
+}
+
+.city-quick-links strong {
+    display: block;
+
+    color: var(--color-text);
+
+    font-size: 14px;
+}
+
+.city-quick-links span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+
+    .city-dashboard {
+        padding: 20px 16px 40px;
+    }
+
+    .city-dashboard__header {
+        flex-direction: column;
+    }
+
+    .city-dashboard__header h1 {
+        font-size: 25px;
+    }
+
+}
