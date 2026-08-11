@@ -108,58 +108,31 @@ export default function NinhKieuDashboardPage() {
             </Row>
 
             {/* Content */}
+
             <Row
                 gutter={[20, 20]}
                 className="dashboard-content"
             >
-
-                <Col xs={24} xl={16}>
-
-                    <Card
+                <Col xs={24} xl={12}>
+                <Card
                         title="Phân bố cơ sở giáo dục"
                         className="panel"
                     >
                         <NinhKieuEducationChart />
                     </Card>
-
                 </Col>
-
-                <Col xs={24} xl={16}>
-                    <Card
+                <Col xs={24} xl={12}>
+                <Card
                         title="Phân bố giáo viên theo cấp học"
                         className="panel"
                     >
                         <NinhKieuTeacherChart />
-                    </Card>
-                </Col>
-
-                <Col xs={24} xl={8}>
-
-                    <Card
-                        title="Tình hình điều hành"
-                        className="panel"
-                    >
-                        <div className="operation-summary">
-
-                            <div>
-                                <strong>25</strong>
-                                <span>Trường công lập</span>
-                            </div>
-
-                            <div>
-                                <strong>590</strong>
-                                <span>Nhóm / lớp</span>
-                            </div>
-
-                            <div>
-                                <strong>18</strong>
-                                <span>Cơ sở MN ngoài công lập</span>
-                            </div>
-
-                        </div>
-                    </Card>
-
-                </Col>
+                    </Card></Col>
+            </Row>
+            <Row
+                gutter={[20, 20]}
+                className="dashboard-content"
+            >
 
                 <Col xs={24} xl={16}>
                     <Card
@@ -172,8 +145,9 @@ export default function NinhKieuDashboardPage() {
 
                 <Col xs={24} xl={8}>
                     <Card
-                        title="Phân loại cơ sở 123"
+                        title="Phân loại cơ sở"
                         className="panel"
+                        style={{ height: "100%" }}
                     >
                         <div className="map-legend">
 
