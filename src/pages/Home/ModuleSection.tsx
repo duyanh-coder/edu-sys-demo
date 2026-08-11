@@ -12,51 +12,63 @@ import { useNavigate } from "react-router-dom";
 const modules = [
     {
         title: "Cơ sở giáo dục",
-        description: "Quản lý và theo dõi các cơ sở giáo dục trên địa bàn",
+        description:
+            "Quản lý và theo dõi các cơ sở giáo dục trên địa bàn",
         value: "25",
         unit: "trường công lập",
         icon: <BankOutlined />,
         path: "/school",
+        color: "school",
     },
     {
         title: "Nhân sự",
-        description: "Theo dõi đội ngũ giáo viên và cán bộ quản lý",
+        description:
+            "Theo dõi đội ngũ giáo viên và cán bộ quản lý",
         value: "4.320",
         unit: "giáo viên",
         icon: <TeamOutlined />,
         path: "/teacher",
+        color: "teacher",
     },
     {
         title: "Cơ sở vật chất",
-        description: "Quản lý phòng học, thiết bị và năng lực sử dụng",
+        description:
+            "Quản lý phòng học, thiết bị và năng lực sử dụng",
         value: "3.120",
         unit: "phòng học",
         icon: <ToolOutlined />,
         path: "/facility",
+        color: "facility",
     },
     {
         title: "Bản đồ GIS",
-        description: "Trực quan hóa hệ thống giáo dục trên bản đồ",
+        description:
+            "Trực quan hóa hệ thống giáo dục trên bản đồ",
         value: "128",
         unit: "điểm trường",
         icon: <EnvironmentOutlined />,
         path: "/gis",
+        color: "gis",
     },
     {
         title: "Cảnh báo",
-        description: "Theo dõi các vấn đề cần được quan tâm và xử lý",
+        description:
+            "Theo dõi các vấn đề cần được quan tâm và xử lý",
         value: "12",
         unit: "cảnh báo",
         icon: <AlertOutlined />,
         path: "/alert",
+        color: "alert",
     },
     {
         title: "Báo cáo",
-        description: "Tổng hợp và phân tích dữ liệu phục vụ điều hành",
+        description:
+            "Tổng hợp và phân tích dữ liệu phục vụ điều hành",
         value: "24",
         unit: "báo cáo",
         icon: <BarChartOutlined />,
         path: "/report",
+        color: "report",
     },
 ];
 
@@ -92,7 +104,7 @@ export default function ModuleSection() {
                             xl={8}
                         >
                             <Card
-                                className="module-card"
+                                className={`function-card function-card--${item.color}`}
                                 hoverable
                                 onClick={() => navigate(item.path)}
                             >

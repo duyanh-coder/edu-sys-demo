@@ -18,6 +18,14 @@ export const COLORS = {
 
     white: "#FFFFFF",
     black: "#000000",
+
+    // Function colors
+    school: "#1677ff",
+    teacher: "#722ed1",
+    facility: "#52c41a",
+    alert: "#fa541c",
+    report: "#13c2c2",
+    gis: "#0891b2",
 };
 
 export default COLORS;
