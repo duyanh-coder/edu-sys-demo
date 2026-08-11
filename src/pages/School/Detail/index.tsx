@@ -14,6 +14,7 @@ import {
     Progress,
     Row,
     Statistic,
+    Table,
     Tag,
 } from "antd";
 
@@ -22,6 +23,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { schools } from "@/mock/school";
 
 import "./style.scss";
+import TeacherChart from "./TeacherChart";
+import StudentChart from "./StudentChart";
 
 export default function SchoolDetailPage() {
     const navigate = useNavigate();
@@ -99,10 +102,10 @@ export default function SchoolDetailPage() {
                                     school.type === "Mầm non"
                                         ? "green"
                                         : school.type === "Tiểu học"
-                                        ? "blue"
-                                        : school.type === "THCS"
-                                        ? "orange"
-                                        : "purple"
+                                            ? "blue"
+                                            : school.type === "THCS"
+                                                ? "orange"
+                                                : "purple"
                                 }
                             >
                                 {school.type}
@@ -328,6 +331,91 @@ export default function SchoolDetailPage() {
 
                 </Col>
 
+            </Row>
+            <Row
+                gutter={[20, 20]}
+                className="school-detail__content"
+            >
+                <Col xs={24} xl={12}>
+                    <Card
+                        title="Giáo viên theo bộ môn"
+                        className="panel"
+                    >
+                        <TeacherChart
+                            data={school.teacherBySubject}
+                        />
+                    </Card>
+                </Col>
+
+                <Col xs={24} xl={12}>
+                    <Card
+                        title="Học sinh theo khối"
+                        className="panel"
+                    >
+                        <StudentChart
+                            data={school.studentByGrade}
+                        />
+                    </Card>
+                </Col>
+            </Row>
+            <Row
+                gutter={[20, 20]}
+                className="school-detail__content"
+            >
+                <Col xs={24}>
+
+                    <Card
+                        title="Danh mục cơ sở vật chất"
+                        className="panel"
+                    >
+
+                        <Table
+                            rowKey="name"
+                            pagination={false}
+                            dataSource={school.facilities}
+                            columns={[
+                                {
+                                    title: "Hạng mục",
+                                    dataIndex: "name",
+                                },
+                                {
+                                    title: "Số lượng",
+                                    dataIndex: "quantity",
+                                },
+                                {
+                                    title: "Diện tích",
+                                    dataIndex: "area",
+                                    render: (value) =>
+                                        value
+                                            ? `${value.toLocaleString(
+                                                "vi-VN"
+                                            )} m²`
+                                            : "-",
+                                },
+                                {
+                                    title: "Tình trạng",
+                                    dataIndex: "status",
+                                    render: (value) => (
+                                        <Tag
+                                            color={
+                                                value === "Tốt"
+                                                    ? "success"
+                                                    : value ===
+                                                        "Cần nâng cấp"
+                                                        ? "warning"
+                                                        : "blue"
+                                            }
+                                        >
+                                            {value}
+                                        </Tag>
+                                    ),
+                                },
+                            ]}
+                        />
+
+                    </Card>
+
+                </Col>
             </Row>
 
             {/* =========================

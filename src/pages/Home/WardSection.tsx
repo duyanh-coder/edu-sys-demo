@@ -65,7 +65,7 @@ export default function WardSection() {
                                         type="primary"
                                         size="large"
                                         icon={<ArrowRightOutlined />}
-                                        iconPosition="end"
+                                        iconPlacement="end"
                                         onClick={() =>
                                             navigate("/ward/ninh-kieu")
                                         }

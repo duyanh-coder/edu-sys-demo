@@ -1,3 +1,20 @@
+export interface TeacherBySubject {
+    subject: string;
+    count: number;
+}
+
+export interface StudentByGrade {
+    grade: string;
+    count: number;
+}
+
+export interface SchoolFacility {
+    name: string;
+    quantity: number;
+    area?: number;
+    status: "Tốt" | "Đang sử dụng" | "Cần nâng cấp";
+}
+
 export interface School {
     id: string;
     code: string;
@@ -9,6 +26,19 @@ export interface School {
     students: number;
     classrooms: number;
     status: "Đang hoạt động" | "Đang nâng cấp";
+
+    teacherBySubject?: TeacherBySubject[];
+    studentByGrade?: StudentByGrade[];
+    facilities?: SchoolFacility[];
+
+    establishedYear?: number;
+    phone?: string;
+    email?: string;
+
+    location?: {
+        lat: number;
+        lng: number;
+    };
 }
 
 export const schools: School[] = [
@@ -43,10 +73,112 @@ export const schools: School[] = [
         type: "Tiểu học",
         address: "Phường Ninh Kiều, TP. Cần Thơ",
         principal: "Lê Văn Thành",
+
         teachers: 72,
-        students: 1_280,
+        students: 1280,
         classrooms: 30,
+
         status: "Đang hoạt động",
+
+        establishedYear: 2010,
+
+        phone: "0292 3xxx xxx",
+
+        email: "dinhbolinh@cantho.edu.vn",
+
+        location: {
+            lat: 10.0342,
+            lng: 105.7836,
+        },
+
+        teacherBySubject: [
+            {
+                subject: "Tiếng Việt",
+                count: 18,
+            },
+            {
+                subject: "Toán",
+                count: 15,
+            },
+            {
+                subject: "Tiếng Anh",
+                count: 10,
+            },
+            {
+                subject: "Tin học",
+                count: 5,
+            },
+            {
+                subject: "Âm nhạc",
+                count: 4,
+            },
+            {
+                subject: "Mỹ thuật",
+                count: 4,
+            },
+        ],
+
+        studentByGrade: [
+            {
+                grade: "Khối 1",
+                count: 250,
+            },
+            {
+                grade: "Khối 2",
+                count: 245,
+            },
+            {
+                grade: "Khối 3",
+                count: 260,
+            },
+            {
+                grade: "Khối 4",
+                count: 270,
+            },
+            {
+                grade: "Khối 5",
+                count: 255,
+            },
+        ],
+
+        facilities: [
+            {
+                name: "Phòng học",
+                quantity: 30,
+                area: 48,
+                status: "Tốt",
+            },
+            {
+                name: "Phòng máy tính",
+                quantity: 2,
+                area: 72,
+                status: "Đang sử dụng",
+            },
+            {
+                name: "Phòng ngoại ngữ",
+                quantity: 2,
+                area: 60,
+                status: "Tốt",
+            },
+            {
+                name: "Thư viện",
+                quantity: 1,
+                area: 96,
+                status: "Tốt",
+            },
+            {
+                name: "Phòng y tế",
+                quantity: 1,
+                area: 32,
+                status: "Đang sử dụng",
+            },
+            {
+                name: "Sân thể thao",
+                quantity: 1,
+                area: 1200,
+                status: "Tốt",
+            },
+        ],
     },
     {
         id: "NK04",
@@ -109,3 +241,4 @@ export const schools: School[] = [
         status: "Đang hoạt động",
     },
 ];
+

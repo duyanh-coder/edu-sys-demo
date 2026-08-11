@@ -1,0 +1,141 @@
+.teacher-page {
+    min-height: 100vh;
+
+    padding: 28px 32px 50px;
+
+    background: var(--color-background);
+}
+
+.teacher-page__back {
+    margin-bottom: 12px;
+
+    .ant-btn {
+        padding-left: 0;
+
+        color: var(--color-text-secondary);
+    }
+
+    .ant-btn:hover {
+        color: var(--color-primary);
+    }
+}
+
+.teacher-page__header {
+    margin-bottom: 28px;
+}
+
+.teacher-page__header h1 {
+    margin: 4px 0 8px;
+
+    color: var(--color-text);
+
+    font-size: 30px;
+}
+
+.teacher-page__header p {
+    margin: 0;
+
+    color: var(--color-text-secondary);
+}
+
+.teacher-kpi {
+    margin-bottom: 20px;
+}
+
+.teacher-stat-card {
+    height: 100%;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.teacher-stat-card .ant-statistic-title {
+    color: var(--color-text-secondary);
+}
+
+.teacher-stat-card .ant-statistic-content {
+    color: var(--color-text);
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+.teacher-panel {
+    overflow: hidden;
+}
+
+.teacher-filter {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.teacher-filter .ant-input {
+    width: 320px;
+}
+
+.teacher-filter .ant-select {
+    width: 220px;
+}
+
+.teacher-name {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.teacher-name__avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(22, 119, 255, 0.08);
+
+    color: var(--color-primary);
+}
+
+.teacher-name strong {
+    display: block;
+
+    color: var(--color-text);
+}
+
+.teacher-name span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .teacher-page {
+        padding: 20px 16px 40px;
+    }
+
+    .teacher-filter {
+        flex-direction: column;
+    }
+
+    .teacher-filter .ant-input,
+    .teacher-filter .ant-select {
+        width: 100%;
+    }
+}

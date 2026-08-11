@@ -13,6 +13,7 @@ import GISPage from "@/pages/GIS";
 import AlertPage from "@/pages/Alert";
 import ReportPage from "@/pages/Report";
 import SchoolDetailPage from "../pages/School/Detail";
+import TeacherDetailPage from "@/pages/Teacher/Detail";
 
 export const router = createBrowserRouter([
     {
@@ -72,6 +73,16 @@ export const router = createBrowserRouter([
             {
                 path: "/report",
                 element: <ReportPage />,
+            },
+
+            {
+                path: "/teacher",
+                element: <TeacherPage />,
+            },
+
+            {
+                path: "/teacher/:id",
+                element: <TeacherDetailPage />,
             },
         ],
     },
