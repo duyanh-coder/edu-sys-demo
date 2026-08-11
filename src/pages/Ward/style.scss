@@ -1,0 +1,347 @@
+.ward-alert-summary {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.ward-alert-summary > button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    border: 1px solid
+        var(--color-border);
+
+    border-radius: 10px;
+
+    background:
+        var(--color-card);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+.ward-alert-summary > button:hover {
+    border-color:
+        var(--color-primary);
+
+    background:
+        var(--color-background);
+}
+
+.ward-alert-summary__icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background:
+        rgba(
+            250,
+            173,
+            20,
+            0.12
+        );
+
+    color: #faad14;
+}
+
+.ward-alert-summary__content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.ward-alert-summary__content strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: var(--color-text);
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.ward-alert-summary__content span {
+    display: block;
+
+    margin: 3px 0 6px;
+
+    overflow: hidden;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.ward-alert-summary
+    > button
+    > svg {
+    color:
+        var(--color-text-secondary);
+}
+
+.ward-activities {
+    display: flex;
+    flex-direction: column;
+}
+
+.ward-activity {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 0;
+
+    border-bottom:
+        1px solid
+        var(--color-border);
+}
+
+.ward-activity:first-child {
+    padding-top: 0;
+}
+
+.ward-activity:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+.ward-activity__icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background:
+        rgba(
+            22,
+            119,
+            255,
+            0.08
+        );
+
+    color:
+        var(--color-primary);
+}
+
+.ward-activity__content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.ward-activity__content strong {
+    display: block;
+
+    color:
+        var(--color-text);
+
+    font-size: 14px;
+}
+
+.ward-activity__content span {
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+.ward-activity time {
+    flex-shrink: 0;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+.ward-dashboard {
+    min-height: 100vh;
+
+    padding: 28px 32px 50px;
+
+    background:
+        var(--color-background);
+}
+
+.ward-dashboard__back {
+    margin-bottom: 12px;
+}
+
+.ward-dashboard__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+
+.ward-dashboard__header h1 {
+    margin: 4px 0 8px;
+
+    color: var(--color-text);
+
+    font-size: 32px;
+}
+
+.ward-dashboard__header p {
+    margin: 0;
+
+    color:
+        var(--color-text-secondary);
+}
+
+.ward-kpi {
+    margin-bottom: 20px;
+}
+
+.ward-stat-card {
+    height: 100%;
+
+    border: 1px solid
+        var(--color-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 0, 0, 0.06);
+}
+
+.ward-stat-card
+    .ant-statistic-title {
+    color:
+        var(--color-text-secondary);
+}
+
+.ward-stat-card
+    .ant-statistic-content {
+    color:
+        var(--color-text);
+
+    font-size: 27px;
+
+    font-weight: 700;
+}
+
+.ward-stat-card button {
+    margin-top: 12px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color:
+        var(--color-primary);
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.ward-stat-note {
+    display: block;
+
+    margin-top: 12px;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+// .ward-main-grid,
+// .ward-chart-grid,
+// .ward-activity-grid {
+//     margin-top: 20px;
+// }
+
+@media (max-width: 767px) {
+
+    .ward-dashboard {
+        padding: 20px 16px 40px;
+    }
+
+    .ward-dashboard__header {
+        flex-direction: column;
+    }
+
+    .ward-dashboard__header h1 {
+        font-size: 25px;
+    }
+
+    .ward-map__container {
+        height: 360px;
+    }
+
+    .ward-activity {
+        align-items: flex-start;
+    }
+
+    .ward-activity time {
+        display: none;
+    }
+}
+
+.ward-activity-grid {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.ward-activities {
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.ward-activity {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}

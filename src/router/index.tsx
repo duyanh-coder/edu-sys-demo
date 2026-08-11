@@ -14,6 +14,9 @@ import AlertPage from "@/pages/Alert";
 import ReportPage from "@/pages/Report";
 import SchoolDetailPage from "../pages/School/Detail";
 import TeacherDetailPage from "@/pages/Teacher/Detail";
+import FacilityDetailPage from "@/pages/Facility/Detail";
+import AlertDetailPage from "@/pages/Alert/Detail";
+import ReportDetailPage from "@/pages/Report/Detail";
 
 export const router = createBrowserRouter([
     {
@@ -83,6 +86,36 @@ export const router = createBrowserRouter([
             {
                 path: "/teacher/:id",
                 element: <TeacherDetailPage />,
+            },
+
+            {
+                path: "/facility",
+                element: <FacilityPage />,
+            },
+
+            {
+                path: "/facility/:id",
+                element: <FacilityDetailPage />,
+            },
+
+            {
+                path: "/alert",
+                element: <AlertPage />,
+            },
+
+            {
+                path: "/alert/:id",
+                element: <AlertDetailPage />,
+            },
+
+            {
+                path: "/report",
+                element: <ReportPage />,
+            },
+
+            {
+                path: "/report/:id",
+                element: <ReportDetailPage />,
             },
         ],
     },

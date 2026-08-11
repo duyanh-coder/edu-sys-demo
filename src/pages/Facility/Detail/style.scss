@@ -1,0 +1,263 @@
+.facility-detail {
+    min-height: 100vh;
+
+    padding: 28px 32px 50px;
+
+    background: var(--color-background);
+}
+
+.facility-detail
+    > .ant-btn {
+    margin-bottom: 16px;
+
+    padding-left: 0;
+
+    color: var(--color-text-secondary);
+}
+
+.facility-detail
+    > .ant-btn:hover {
+    color: var(--color-primary);
+}
+
+/* Header */
+
+.facility-detail__header {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.facility-detail__icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 16px;
+
+    background: rgba(22, 119, 255, 0.1);
+
+    color: var(--color-primary);
+
+    font-size: 28px;
+}
+
+.facility-detail__header h1 {
+    margin: 4px 0 10px;
+
+    color: var(--color-text);
+
+    font-size: 30px;
+}
+
+.facility-detail__meta {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+/* KPI */
+
+.facility-detail__kpi {
+    margin-bottom: 20px;
+}
+
+.facility-detail-stat {
+    height: 100%;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.facility-detail-stat
+    .ant-statistic-title {
+    color: var(--color-text-secondary);
+}
+
+.facility-detail-stat
+    .ant-statistic-content {
+    color: var(--color-text);
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+/* Content */
+
+.facility-detail__content {
+    margin-top: 20px;
+}
+
+/* Info */
+
+.facility-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--color-border);
+}
+
+.facility-info > div:first-child {
+    padding-top: 0;
+}
+
+.facility-info > div:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+.facility-info span {
+    color: var(--color-text-secondary);
+
+    font-size: 14px;
+}
+
+.facility-info strong {
+    color: var(--color-text);
+
+    font-size: 14px;
+
+    text-align: right;
+}
+
+/* Capacity */
+
+.facility-capacity {
+    text-align: center;
+}
+
+.facility-capacity__value {
+    margin: 8px 0 12px;
+
+    color: var(--color-primary);
+
+    font-size: 40px;
+
+    font-weight: 700;
+}
+
+.facility-capacity > span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+/* School */
+
+.facility-school {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.facility-school__icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(22, 119, 255, 0.08);
+
+    color: var(--color-primary);
+
+    font-size: 22px;
+}
+
+.facility-school strong {
+    display: block;
+
+    color: var(--color-text);
+
+    font-size: 15px;
+}
+
+.facility-school span {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 5px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .facility-detail {
+        padding: 20px 16px 40px;
+    }
+
+    .facility-detail__header {
+        align-items: flex-start;
+    }
+
+    .facility-detail__icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 22px;
+    }
+
+    .facility-detail__header h1 {
+        font-size: 23px;
+    }
+
+    .facility-info > div {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .facility-info strong {
+        text-align: left;
+    }
+
+}

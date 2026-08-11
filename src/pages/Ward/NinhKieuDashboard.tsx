@@ -4,13 +4,22 @@ import {
     TeamOutlined,
     UserOutlined,
 } from "@ant-design/icons";
-import { Card, Col, Row, Statistic, Tag } from "antd";
+import { Button, Card, Col, Row, Statistic, Tag } from "antd";
+
+import { useNavigate } from "react-router-dom";
 
 import "./NinhKieuDashboard.scss";
+import "./style.scss";
+import "./style-map.scss";
+
 import BackButton from "../../components/BackButton";
 import NinhKieuEducationChart from "./NinhKieuEducationChart";
 import NinhKieuTeacherChart from "./NinhKieuTeacherChart";
 import NinhKieuMap from "./NinhKieuMap";
+import RecentActivities from "./RecentActivities";
+import EducationDistributionChart from "./EducationDistributionChart";
+import TeacherDistributionChart from "./TeacherDistributionChart";
+import { ninhKieuDashboard } from "@/mock/wardDashboard";
 
 const statistics = [
     {
@@ -36,6 +45,9 @@ const statistics = [
 ];
 
 export default function NinhKieuDashboardPage() {
+    const navigate = useNavigate();
+    const data = ninhKieuDashboard;
+    
     return (
         <div className="ninh-kieu-dashboard">
 
@@ -160,7 +172,7 @@ export default function NinhKieuDashboardPage() {
 
                 <Col xs={24} xl={8}>
                     <Card
-                        title="Phân loại cơ sở"
+                        title="Phân loại cơ sở 123"
                         className="panel"
                     >
                         <div className="map-legend">
@@ -188,6 +200,70 @@ export default function NinhKieuDashboardPage() {
                         </div>
                     </Card>
                 </Col>
+            </Row>
+
+            <Row
+                gutter={[20, 20]}
+                className="dashboard-content"
+            >
+                <Col xs={24} xl={12}>
+
+                    <Card
+                        title="Cơ cấu cơ sở giáo dục"
+                        className="panel"
+                    >
+                        <EducationDistributionChart
+                            data={
+                                data.educationDistribution
+                            }
+                        />
+                    </Card>
+
+                </Col>
+
+                <Col xs={24} xl={12}>
+
+                    <Card
+                        title="Đội ngũ giáo viên theo bộ môn"
+                        className="panel"
+                    >
+                        <TeacherDistributionChart
+                            data={
+                                data.teacherDistribution
+                            }
+                        />
+                    </Card>
+
+                </Col>
+
+            </Row>
+
+            <Row
+                gutter={[20, 20]}
+                className="dashboard-content"
+            >
+
+                <Col xs={24}>
+
+                    <Card
+                        title="Hoạt động gần đây"
+                        extra={
+                            <Button
+                                type="link"
+                                onClick={() =>
+                                    navigate("/report")
+                                }
+                            >
+                                Báo cáo →
+                            </Button>
+                        }
+                        className="panel"
+                    >
+                        <RecentActivities />
+                    </Card>
+
+                </Col>
+
             </Row>
 
         </div >

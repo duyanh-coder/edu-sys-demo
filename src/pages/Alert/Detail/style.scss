@@ -1,0 +1,287 @@
+.alert-detail {
+    min-height: 100vh;
+
+    padding: 28px 32px 50px;
+
+    background: var(--color-background);
+}
+
+.alert-detail
+    > .ant-btn {
+    margin-bottom: 16px;
+
+    padding-left: 0;
+
+    color: var(--color-text-secondary);
+}
+
+.alert-detail
+    > .ant-btn:hover {
+    color: var(--color-primary);
+}
+
+/* Header */
+
+.alert-detail__header {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.alert-detail__icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 16px;
+
+    background: rgba(250, 173, 20, 0.12);
+
+    color: #faad14;
+
+    font-size: 28px;
+}
+
+.alert-detail__header h1 {
+    max-width: 900px;
+
+    margin: 4px 0 10px;
+
+    color: var(--color-text);
+
+    font-size: 30px;
+
+    line-height: 1.3;
+}
+
+.alert-detail__meta {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+/* Description */
+
+.alert-description__message {
+    padding: 18px;
+
+    color: var(--color-text);
+
+    background: var(--color-background);
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.alert-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.alert-info > div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 14px;
+
+    background: var(--color-background);
+
+    border-radius: 10px;
+}
+
+.alert-info svg {
+    color: var(--color-primary);
+}
+
+.alert-info span {
+    color: var(--color-text-secondary);
+
+    font-size: 13px;
+}
+
+.alert-info strong {
+    margin-left: auto;
+
+    color: var(--color-text);
+
+    font-size: 13px;
+}
+
+/* School */
+
+.alert-school {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.alert-school__icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(22, 119, 255, 0.08);
+
+    color: var(--color-primary);
+
+    font-size: 21px;
+}
+
+.alert-school strong {
+    display: block;
+
+    color: var(--color-text);
+
+    font-size: 14px;
+}
+
+.alert-school span {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 5px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+/* Process */
+
+.alert-detail__content {
+    margin-top: 20px;
+}
+
+.alert-process {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.alert-process__step {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 12px;
+}
+
+.alert-process__step > span {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--color-border);
+
+    color: var(--color-text-secondary);
+
+    font-weight: 700;
+}
+
+.alert-process__step.active {
+    border-color: var(--color-primary);
+}
+
+.alert-process__step.active > span {
+    background: var(--color-primary);
+
+    color: #fff;
+}
+
+.alert-process__step strong {
+    display: block;
+
+    color: var(--color-text);
+
+    font-size: 14px;
+}
+
+.alert-process__step small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--color-text-secondary);
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .alert-detail {
+        padding: 20px 16px 40px;
+    }
+
+    .alert-detail__header {
+        align-items: flex-start;
+    }
+
+    .alert-detail__icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 22px;
+    }
+
+    .alert-detail__header h1 {
+        font-size: 23px;
+    }
+
+    .alert-info {
+        grid-template-columns: 1fr;
+    }
+
+    .alert-process {
+        grid-template-columns: 1fr;
+    }
+
+}
