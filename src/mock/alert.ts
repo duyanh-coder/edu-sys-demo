@@ -146,7 +146,7 @@ export const alerts: EducationAlert[] = [
 
         schoolId: "NK01",
         schoolName:
-            "Trường Mầm non Ninh Kiều",
+            "Trường Mầm non An Xuyên",
 
         category: "Vận hành",
 

@@ -379,6 +379,16 @@ export default function SchoolDetailPage() {
                                     dataIndex: "name",
                                 },
                                 {
+                                    title: "Cơ sở",
+                                    dataIndex: "facilityBase",
+                                    key: "facilityBase",
+                                    render: (value: string) => (
+                                        <Tag color="blue">
+                                            {value}
+                                        </Tag>
+                                    ),
+                                },
+                                {
                                     title: "Số lượng",
                                     dataIndex: "quantity",
                                 },

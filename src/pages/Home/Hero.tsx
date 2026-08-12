@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import "./Hero.scss";
 
-import heroImage from "@/assets/images/hero/cantho-hero.jpg";
+// import heroImage from "@/assets/images/hero/cantho-hero.jpg";
+import heroImage from "@/assets/images/hero/camau-hero.jpg";
 
 export default function Hero() {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ export default function Hero() {
                 </h1>
 
                 <p>
-                    Thành phố Cần Thơ
+                    Tỉnh Cà Mau
                 </p>
 
                 <div className="hero-action">

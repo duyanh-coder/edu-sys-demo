@@ -26,7 +26,7 @@ export default function WardSection() {
 
                     <p>
                         Theo dõi tổng quan tình hình giáo dục và đi sâu
-                        đến từng địa bàn trên toàn thành phố.
+                        đến từng địa bàn trên toàn tỉnh.
                     </p>
                 </div>
 
@@ -53,12 +53,12 @@ export default function WardSection() {
                                     </Tag>
 
                                     <h3>
-                                        Phường Ninh Kiều
+                                        Phường An Xuyên
                                     </h3>
 
                                     <div className="ward-main-card__location">
                                         <EnvironmentOutlined />
-                                        Trung tâm Thành phố Cần Thơ
+                                        Trung tâm Tỉnh Cà Mau
                                     </div>
 
                                     <Button
@@ -67,7 +67,7 @@ export default function WardSection() {
                                         icon={<ArrowRightOutlined />}
                                         iconPlacement="end"
                                         onClick={() =>
-                                            navigate("/ward/ninh-kieu")
+                                            navigate("/ward/an-xuyen")
                                         }
                                     >
                                         Xem Dashboard

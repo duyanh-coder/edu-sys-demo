@@ -333,8 +333,8 @@ export default function FacilityDetailPage() {
 
                                 <span>
                                     <EnvironmentOutlined />
-                                    Phường Ninh Kiều,
-                                    Thành phố Cần Thơ
+                                    Phường An Xuyên,
+                                    Tỉnh Cà Mau
                                 </span>
                             </div>
 

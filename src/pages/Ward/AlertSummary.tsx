@@ -8,7 +8,8 @@ import { Tag } from "antd";
 import { useNavigate } from "react-router-dom";
 
 import {
-    ninhKieuDashboard,
+    // ninhKieuDashboard,
+    anXuyenDashboard
 } from "@/mock/wardDashboard";
 
 export default function AlertSummary() {
@@ -17,7 +18,7 @@ export default function AlertSummary() {
     return (
         <div className="ward-alert-summary">
 
-            {ninhKieuDashboard.alerts.map(
+            {anXuyenDashboard.alerts.map(
                 (alert) => (
                     <button
                         key={alert.id}

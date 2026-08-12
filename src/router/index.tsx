@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
             },
 
             {
-                path: "/ward/ninh-kieu",
+                path: "/ward/an-xuyen",
                 element: <NinhKieuDashboardPage />,
             },
 

@@ -345,3 +345,36 @@
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+.school-map-marker {
+    background: transparent;
+    border: none;
+}
+
+.school-map-marker__inner {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    background: var(--marker-color);
+
+    border: 3px solid #fff;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.school-map-marker__inner span {
+    transform: rotate(45deg);
+
+    font-size: 17px;
+
+    line-height: 1;
+}

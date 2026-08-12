@@ -249,8 +249,8 @@ export default function TeacherDetailPage() {
                                 </strong>
 
                                 <span>
-                                    Phường Ninh Kiều,
-                                    Thành phố Cần Thơ
+                                    Phường An Xuyên,
+                                    Tỉnh Cà Mau
                                 </span>
                             </div>
 

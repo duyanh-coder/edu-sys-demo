@@ -18,7 +18,8 @@ import {
 import { useNavigate } from "react-router-dom";
 
 import {
-    ninhKieuDashboard,
+    // ninhKieuDashboard,
+    anXuyenDashboard
 } from "@/mock/wardDashboard";
 
 import EducationDistributionChart
@@ -39,7 +40,8 @@ import "./style.scss";
 export default function WardPage() {
     const navigate = useNavigate();
 
-    const data = ninhKieuDashboard;
+    // const data = ninhKieuDashboard;
+    const data = anXuyenDashboard;
 
     return (
         <div className="ward-dashboard">
@@ -62,7 +64,7 @@ export default function WardPage() {
                     </div>
 
                     <h1>
-                        Giáo dục Phường Ninh Kiều
+                        Giáo dục Phường An Xuyên
                     </h1>
 
                     <p>
@@ -75,7 +77,7 @@ export default function WardPage() {
                     color="blue"
                     icon={<BankOutlined />}
                 >
-                    Phường Ninh Kiều
+                    Phường An Xuyên
                 </Tag>
 
             </div>

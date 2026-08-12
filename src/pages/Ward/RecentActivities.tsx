@@ -4,14 +4,15 @@ import {
 } from "@ant-design/icons";
 
 import {
-    ninhKieuDashboard,
+    // ninhKieuDashboard,
+    anXuyenDashboard
 } from "@/mock/wardDashboard";
 
 export default function RecentActivities() {
     return (
         <div className="ward-activities">
 
-            {ninhKieuDashboard.activities.map(
+            {anXuyenDashboard.activities.map(
                 (activity, index) => (
                     <div
                         key={index}

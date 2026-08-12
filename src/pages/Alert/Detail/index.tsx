@@ -236,8 +236,8 @@ export default function AlertDetailPage() {
 
                                 <span>
                                     <EnvironmentOutlined />
-                                    Phường Ninh Kiều,
-                                    TP. Cần Thơ
+                                    Phường An Xuyên,
+                                    Tỉnh Cần Thơ
                                 </span>
                             </div>
 

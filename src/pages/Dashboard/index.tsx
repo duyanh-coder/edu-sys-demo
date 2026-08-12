@@ -64,7 +64,7 @@ export default function DashboardPage() {
                     </div>
 
                     <h1>
-                        Giáo dục Thành phố Cần Thơ
+                        Giáo dục Tỉnh Cà Mau
                     </h1>
 
                     <p>
@@ -78,7 +78,7 @@ export default function DashboardPage() {
                     color="blue"
                     icon={<EnvironmentOutlined />}
                 >
-                    Thành phố Cần Thơ
+                    Tỉnh Cà Mau
                 </Tag>
 
             </div>
@@ -139,14 +139,14 @@ export default function DashboardPage() {
 
                             <button
                                 onClick={() =>
-                                    navigate("/ward/ninh-kieu")
+                                    navigate("/ward/an-xuyen")
                                 }
                             >
                                 <EnvironmentOutlined />
 
                                 <div>
                                     <strong>
-                                        Phường Ninh Kiều
+                                        Phường An Xuyên
                                     </strong>
 
                                     <span>

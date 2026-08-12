@@ -19,7 +19,10 @@ import NinhKieuMap from "./NinhKieuMap";
 import RecentActivities from "./RecentActivities";
 import EducationDistributionChart from "./EducationDistributionChart";
 import TeacherDistributionChart from "./TeacherDistributionChart";
-import { ninhKieuDashboard } from "@/mock/wardDashboard";
+import { 
+    // ninhKieuDashboard,
+    anXuyenDashboard 
+} from "@/mock/wardDashboard";
 
 const statistics = [
     {
@@ -46,10 +49,11 @@ const statistics = [
 
 export default function NinhKieuDashboardPage() {
     const navigate = useNavigate();
-    const data = ninhKieuDashboard;
+    // const data = ninhKieuDashboard;
+    const data = anXuyenDashboard;
     
     return (
-        <div className="ninh-kieu-dashboard">
+        <div className="an-xuyen-dashboard">
 
             {/* Header */}
             <div className="dashboard-heading">
@@ -63,7 +67,7 @@ export default function NinhKieuDashboardPage() {
                     </div>
 
                     <h1>
-                        Phường Ninh Kiều
+                        Phường An Xuyên
                     </h1>
 
                     <p>
@@ -75,7 +79,7 @@ export default function NinhKieuDashboardPage() {
                     icon={<EnvironmentOutlined />}
                     color="blue"
                 >
-                    Ninh Kiều - Cần Thơ
+                    An Xuyên - Cần Thơ
                 </Tag>
 
             </div>

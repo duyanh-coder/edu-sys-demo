@@ -96,7 +96,16 @@ export default function FacilityPage() {
                 </div>
             ),
         },
-
+        {
+            title: "Cơ sở",
+            dataIndex: "facilityBase",
+            key: "facilityBase",
+            render: (value: string) => (
+                <Tag color="blue">
+                    {value}
+                </Tag>
+            ),
+        },
         {
             title: "Cơ sở giáo dục",
             dataIndex: "schoolName",
@@ -129,8 +138,8 @@ export default function FacilityPage() {
             render: (value?: number) =>
                 value
                     ? `${value.toLocaleString(
-                          "vi-VN"
-                      )} m²`
+                        "vi-VN"
+                    )} m²`
                     : "-",
         },
 
@@ -141,8 +150,8 @@ export default function FacilityPage() {
             render: (value?: number) =>
                 value
                     ? `${value.toLocaleString(
-                          "vi-VN"
-                      )}`
+                        "vi-VN"
+                    )}`
                     : "-",
         },
 
@@ -158,9 +167,9 @@ export default function FacilityPage() {
                         value === "Tốt"
                             ? "success"
                             : value ===
-                              "Cần nâng cấp"
-                            ? "warning"
-                            : "processing"
+                                "Cần nâng cấp"
+                                ? "warning"
+                                : "processing"
                     }
                 >
                     {value}

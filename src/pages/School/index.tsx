@@ -156,7 +156,7 @@ export default function SchoolPage() {
 
                     <p>
                         Quản lý thông tin các trường học
-                        trên địa bàn phường Ninh Kiều.
+                        trên địa bàn phường An Xuyên.
                     </p>
                 </div>
 
@@ -164,7 +164,7 @@ export default function SchoolPage() {
                     icon={<EnvironmentOutlined />}
                     color="blue"
                 >
-                    Phường Ninh Kiều
+                    Phường An Xuyên
                 </Tag>
 
             </div>

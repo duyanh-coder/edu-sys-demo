@@ -90,7 +90,7 @@ export default function ModuleSection() {
 
                     <p>
                         Truy cập nhanh các lĩnh vực quản lý và điều hành
-                        giáo dục trên địa bàn thành phố.
+                        giáo dục trên địa bàn tỉnh.
                     </p>
                 </div>
 
